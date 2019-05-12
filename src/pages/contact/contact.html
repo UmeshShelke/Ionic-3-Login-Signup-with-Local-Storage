@@ -1,0 +1,21 @@
+
+<ion-header>
+  <ion-navbar>
+      <ion-title>
+          Biodata..
+      </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+      <ion-item-divider></ion-item-divider>
+      <ion-item-sliding *ngFor="let itemData of item; let i = index">
+          <ion-item class="padding-left-0">
+              <h2>{{ i + 1 }}. {{ itemData.username }}</h2>
+          </ion-item>
+</ion-item-sliding>
+</ion-list>
+
+</ion-content>
